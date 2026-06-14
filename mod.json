@@ -1,0 +1,49 @@
+{
+  "geode": "1.0.0",
+  "version": "1.0.0",
+  "id": "manus.geoai",
+  "name": "Geometry Dash AI Learner",
+  "developer": "Manus AI",
+  "description": "An AI agent that learns to play Geometry Dash levels using NEAT (NeuroEvolution of Augmenting Topologies). Watch as the AI evolves and improves its gameplay over multiple generations.",
+  "repository": "https://github.com/manus-ai/geode-ai-mod",
+  "settings": {
+    "enable_ai": {
+      "name": "Enable AI Training",
+      "description": "Start or stop the AI training process",
+      "type": "bool",
+      "default": false
+    },
+    "population_size": {
+      "name": "Population Size",
+      "description": "Number of AI agents per generation",
+      "type": "int",
+      "default": 50,
+      "min": 10,
+      "max": 200
+    },
+    "vision_grid_size": {
+      "name": "Vision Grid Size",
+      "description": "Size of the AI's vision grid (NxN)",
+      "type": "int",
+      "default": 7,
+      "min": 5,
+      "max": 15
+    },
+    "fitness_weight_progress": {
+      "name": "Fitness Weight - Progress",
+      "description": "Weight for level completion percentage in fitness calculation",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 10.0
+    },
+    "fitness_weight_time": {
+      "name": "Fitness Weight - Time Alive",
+      "description": "Weight for time alive in fitness calculation",
+      "type": "float",
+      "default": 0.1,
+      "min": 0.0,
+      "max": 10.0
+    }
+  }
+}
